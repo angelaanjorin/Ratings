@@ -23,11 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-56=p3z8u51l0j@$34z6r0@d#vu&l4*kp-jd+!2ctnyb*x0_yzc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost',
     '.gitpod.io',
-    '127.0.0.1',]
+    '127.0.0.1',
+    '.herokuapp.com',
+]
 
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io']
 # Application definition
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'products',
 ]
 
 MIDDLEWARE = [
